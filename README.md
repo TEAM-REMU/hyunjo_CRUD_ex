@@ -20,3 +20,6 @@ git pull 안 됐는데 이러니까 해결 됐음
 git branch --set-upstream-to=origin/master master
 
 git pull 만으로도 가능해졌습니다.
+
+https://www.whatwant.com/entry/Git-Branch-%EB%B8%8C%EB%9E%9C%EC%B9%98-Remote-%E2%85%A0-Fetch
+호옹.. 이것도 참고
