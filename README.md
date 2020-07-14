@@ -17,6 +17,6 @@ git pull 또!! 안 됐는데 이러니까 해결 됐음
 메시지 아랫부분에 나와있었네요.
 -u 나 --set-upstream-to 옵션 줘서 로컬 master가 origin/master를 추적하게끔 해줍니다.
 
-`git branch --set-upstream-to=origin/master master
+git branch --set-upstream-to=origin/master master
 
 git pull 만으로도 가능해졌습니다.
