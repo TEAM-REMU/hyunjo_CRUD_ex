@@ -15,7 +15,8 @@ git pull 또!! 안 됐는데 이러니까 해결 됐음
 
 로컬에 branch가 생성되었으니 그걸 리모트 branch를 추적하게 해야 하나 봅니다. 
 메시지 아랫부분에 나와있었네요.
--u`나 `--set-upstream-to 옵션 줘서 로컬 master가 origin/master를 추적하게끔 해줍니다.
+-u 나 --set-upstream-to 옵션 줘서 로컬 master가 origin/master를 추적하게끔 해줍니다.
 
-git branch --set-upstream-to=origin/master master
+`git branch --set-upstream-to=origin/master master
+
 git pull 만으로도 가능해졌습니다.
