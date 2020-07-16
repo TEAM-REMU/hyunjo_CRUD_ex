@@ -10,16 +10,3 @@
 * 글에 조회수 추가(작성시 조회수 1부터 시작)
 * 메인 화면에 블로그 글 최신순으로 보여주기
 * 링크와 일치하는 post가 없으면 에러말구 404 홈페이지처럼 오류 페이지 보여주기
-
-git pull 안 됐는데 이러니까 해결 됐음
-
-로컬에 branch가 생성되었으니 그걸 리모트 branch를 추적하게 해야 하나 봅니다. 
-메시지 아랫부분에 나와있었네요.
--u 나 --set-upstream-to 옵션 줘서 로컬 master가 origin/master를 추적하게끔 해줍니다.
-
-git branch --set-upstream-to=origin/master master
-
-git pull 만으로도 가능해졌습니다.
-
-https://www.whatwant.com/entry/Git-Branch-%EB%B8%8C%EB%9E%9C%EC%B9%98-Remote-%E2%85%A0-Fetch
-호옹.. 이것도 참고
