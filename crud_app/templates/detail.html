@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block contents %}
+<a href="{% url 'delete' details.id %}">삭제하기</a>
+<a href="{% url 'edit' details.id %}">수정하기</a>
+<a href="{% url 'home' %}">GO TO HOME</a>
+
+<body>
+    <div class="col-sm-12" style="margin-bottom: 25px;">
+        <div class="card">
+            <div class="card-body">
+                <h1 class="card-title">
+                    {{details.title}}
+                </h1>
+                <hr>
+                <h5>
+                    {{details.body}}
+                </h5>
+            </div>
+        </div>
+    </div>
+</body>
+{% endblock contents %}

@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block contents %}
+<body>
+    <div class="container" style="padding: 10px; box-shadow: 2px 2px 6px gray; border: 3px solid black; width: 100%; margin: 30px 0;">
+        <form action="{% url 'create' %}">
+            <div class="form-group">
+                 <div class="form-group">
+                     <label for="exampleFormControlInput1">제목</label>
+                     <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Title" name="title">
+                 </div>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">오늘의 일기</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Contents" rows="10" name="body"></textarea>
+           </div>
+           <input type="submit" class="btn btn-info" />
+        </form>
+    </div>
+</body>
+{% endblock %}

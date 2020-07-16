@@ -1,7 +1,22 @@
 {% extends 'base.html' %}
 
-<body>
-    {% block contents %}
-        <h1>홈페이지입니당</h1>
-    {% endblock %}
-</body>
+{% block contents %}
+
+    <div class="container">
+        <div class="row">
+          {% for blog in blogs.all %}
+          <div class="col-sm-6" style="margin: 30px 0;">
+            <div class="card" style="width: 18rem;">
+              <img src="" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">{{blog.title}}</h5>
+                <p class="card-text">{{blog.pub_date}}</p>
+                <p class="card-text">{{blog.summary}}</p>
+              </div>
+              <a class="btn btn-secondary" href="{%url 'detail' blog.id%}">더보기</a>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+    </div>
+{% endblock contents %}
